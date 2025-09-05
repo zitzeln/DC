@@ -14,11 +14,11 @@ headers = {
 }
 
 payload = {
-    "content": "Hello from GitHub Actions!"
+    "content": "What is going on?"
 }
 
 # Random wait (0 to 3600 sec = 1 hour)
-wait_seconds = random.randint(0, 3600)
+wait_seconds = random.randint(0, 10)
 print(f"Waiting {wait_seconds} seconds before sending...")
 time.sleep(wait_seconds)
 
