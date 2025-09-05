@@ -19,5 +19,6 @@ jobs:
 
       - name: Run script
         env:
-          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: python webhook.py
