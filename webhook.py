@@ -14,11 +14,11 @@ headers = {
 }
 
 payload = {
-    "content": "What is going on?"
+    "content": "?collect"
 }
 
 # Random wait (0 to 3600 sec = 1 hour)
-wait_seconds = random.randint(0, 10)
+wait_seconds = random.randint(0, 3500)
 print(f"Waiting {wait_seconds} seconds before sending...")
 time.sleep(wait_seconds)
 
