@@ -1,0 +1,23 @@
+name: Discord Webhook Hourly
+
+on:
+  schedule:
+    - cron: "52 * * * *"   # At minute 52 every hour
+  workflow_dispatch:       # allows manual run
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Run script
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: python webhook.py
