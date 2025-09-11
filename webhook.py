@@ -18,7 +18,7 @@ payload = {
 }
 
 # Random wait (0 to 3600 sec = 1 hour)
-wait_seconds = random.randint(0, 3400)
+wait_seconds = random.randint(0, 3000)
 print(f"Waiting {wait_seconds} seconds before sending...")
 time.sleep(wait_seconds)
 
