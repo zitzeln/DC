@@ -2,7 +2,7 @@ name: Discord Webhook Hourly
 
 on:
   schedule:
-    - cron: "52 1-18  * * *"   # At minute 52 every hour
+    - cron: "52 6-23  * * *"   # At minute 52 every hour
   workflow_dispatch:       # allows manual run
 
 jobs:
